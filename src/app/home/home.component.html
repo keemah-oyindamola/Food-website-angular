@@ -1,0 +1,38 @@
+<div class="container">
+    <header>
+      <img src="https://dcassetcdn.com/design_img/4001448/784504/28494866/5x5b49c6fbhcznq8nv1qgsr1zm_thumbnail.png" alt="Logo" class="logo">
+      <nav>
+        <ul>
+          <li><a class="home" href="#">Home</a></li>
+          <li><a href="#">Food Menu</a></li>
+          <li><a href="#">Reserve Table</a></li>
+          <li><a href="#">Packages</a></li>
+          <li><a href="#">About us</a></li>
+        </ul>
+      </nav>
+    </header>
+  
+    <main class="hero-section">
+      <div [ngSwitch]="date" class="text-content">
+        <h1 *ngSwitchCase=0>It's Sunday</h1>
+        <h1 *ngSwitchCase=1>It's Monday</h1>
+        <h1 *ngSwitchCase=2>It's Tuesday</h1>
+        <h1 *ngSwitchCase=3>It's Wednesday</h1>
+        <h1 *ngSwitchCase=4>It's Thursday</h1>
+        <h1 *ngSwitchCase=5>It's Friday</h1>
+        <h1 *ngSwitchCase=6>It's Saturday</h1>
+        <h1>Reserve Your <span>Table</span> & Order Your <span>Meal</span></h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="buttons">
+          <button class="btn btn-reserve">Reserve Table</button>
+          <button class="btn btn-order">Order Food</button>
+        </div>
+      </div>
+      <div class="image-content">
+        <img src="https://eatingbirdfood.com/wp-content/uploads/2023/01/brittany-1of3.jpg" alt="Girl with food">
+      </div>
+    </main>
+
+    <app-second-section></app-second-section>
+  </div>
+  

@@ -1,0 +1,290 @@
+.container {
+    /* width: 100%; */
+    padding: 0 15px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .introduction {
+    margin-top: 50px;
+  }
+  
+  .introduction h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .intro-image {
+    width: 80%;
+    /* max-width: 1000px; */
+    height: 260px;
+  }
+  
+  .about-us {
+    margin-top: 50px;
+  }
+  
+  .about-us h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .about-us p {
+    font-size: 1rem;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  .about-us button{
+    background-color: #A52A2A;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+  
+
+
+  .hotel-services {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    /* margin-top: 20px; */
+    margin: 20px auto;
+    /* padding: 0 15px; */
+
+  }
+  
+  .hotel-services .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+  
+  .hotel-services h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+  
+  .hotel-services p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .hotel-services .play-button {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .hotel-services .play-button img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .hotel-services .food-trays img {
+    width: 90%;
+    height: 470px;
+    display: block;
+  }
+  
+  .food-trays {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .hotel-services .food-trays::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: rgba(0, 0, 0, 0.5); */
+    z-index: 1;
+  }
+  
+
+  /* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  } */
+  
+  .food-menu {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  
+  .food-menu h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .food-menu p {
+    font-size: 1.1em;
+    margin-bottom: 40px;
+    color: #666;
+  }
+  
+  .menu-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .menu-item {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .menu-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  
+  .menu-item:hover img {
+    transform: scale(1.1);
+  }
+  
+  .item-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 20px;
+    text-align: left;
+    transition: background 0.3s ease;
+  }
+  
+  .item-info h2 {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+  }
+  
+  .order-now {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+  }
+  
+  .order-now:hover {
+    border-color: white;
+  }
+
+
+
+  .popular-dishes {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+  }
+  
+  .popular-dishes h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .popular-dishes p {
+    font-size: 1.1em;
+    margin-bottom: 40px;
+    color: #666;
+  }
+  
+  .dishes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .dish-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    width: 250px;
+    text-align: left;
+  }
+  
+  .dish-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .dish-card .card-content {
+    padding: 20px;
+  }
+  
+  .dish-card h2 {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+  }
+  
+  .dish-card .price {
+    color: #b12704;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .dish-card p {
+    color: #666;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+  }
+  
+  .dish-card button {
+    background: #b12704;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  .dish-card button:hover {
+    background: #a12704;
+  }
+
+
+  .button-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .see-all-items {
+    background-color: #a6532b; /* Adjust this color to match the button's background */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .see-all-items:hover {
+    background-color: #8c4322; /* Adjust this color for the hover state */
+  }
+  
+  
